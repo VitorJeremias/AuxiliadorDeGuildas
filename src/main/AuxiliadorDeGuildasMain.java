@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import modelo.Acoes;
 
-public class FoEBotMain {
+public class AuxiliadorDeGuildasMain {
 
 	public static void main(String[] args) throws HeadlessException, IOException, AWTException, InterruptedException {
 		Acoes.iniciarPrograma();

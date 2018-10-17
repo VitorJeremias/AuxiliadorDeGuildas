@@ -2,15 +2,15 @@ package utils;
 
 public class StringConstants {
 
-	public static String pathPrincipal = "/home/vitor/Downloads/PrintsFOE/";
-	public static String pathColetar = "/home/vitor/Downloads/PrintsFOE/Coletar/";
+	public static String pathPrincipal = "C:\\Users\\Vitor\\Downloads\\PrintsFOE\\";
+	public static String pathAuxiliadorDeGuildas = pathPrincipal + "AuxiliadorDeGuildas\\";
 
 	public String pathPrincipal() {
 		return pathPrincipal;
 	}
 
-	public String pathColetar() {
-		return pathColetar;
+	public String pathAuxiliadorDeGuildas() {
+		return pathAuxiliadorDeGuildas;
 	}
 
 }

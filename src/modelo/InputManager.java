@@ -10,7 +10,8 @@ public class InputManager {
 	public static Robot clicker = null;
 	private static Robot keyboard = null;
 
-	public static void escrever(String string) throws AWTException {
+	public static void escrever(String string) throws AWTException, InterruptedException {
+		Thread.sleep(500);
 		apagar();
 		digitar(string);
 	}
@@ -20,14 +21,14 @@ public class InputManager {
 		for (int i = 0; i < nome.length(); i++) {
 			char[] chars = nome.toUpperCase().toCharArray();
 			switch (chars[i]) {
-			case 'Ãƒ':
+			case 'Ã':
 				keyboard.keyPress(KeyEvent.VK_DEAD_TILDE);
 				keyboard.keyRelease(KeyEvent.VK_DEAD_TILDE);
 				keyboard.keyPress(KeyEvent.VK_A);
 				keyboard.keyRelease(KeyEvent.VK_A);
 				keyboard.delay(20);
 				break;
-			case 'ÃŠ':
+			case 'Ê':
 				keyboard.keyPress(KeyEvent.VK_SHIFT);
 				keyboard.keyPress(KeyEvent.VK_DEAD_TILDE);
 				keyboard.keyRelease(KeyEvent.VK_SHIFT);
